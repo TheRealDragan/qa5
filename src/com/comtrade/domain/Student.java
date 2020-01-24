@@ -7,6 +7,11 @@ public class Student {
 	private String email;
 	private String imageUrl;
 	
+	private static String university;
+	
+	public Student() {		
+	}
+	
 	public Student(String name, String lastName) {
 		this.name = name;
 		this.lastName = lastName;
@@ -35,7 +40,15 @@ public class Student {
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
+	
+	
 	 	
+	public static String getUniversity() {
+		return university;
+	}
+	public static void setUniversity(String university) {
+		Student.university = university;
+	}
 	@Override
 	public String toString() {
 		return "Buba Miranovic";
