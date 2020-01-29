@@ -29,4 +29,15 @@ public class AverageOfListExample {
 	    }
 	    return sum / intList.size();	    
 	}
+	
+	public void logIn() {
+		WebDriver driver = new Driver();
+		WebElement element = driver.getElementById("login-field");
+		element.fillText("petarnov");
+		WebElement secondElement = driver.getElementById("password-field");
+		element.fillText("petarpetar");
+		WebElement button = driver.getElementById("login-button");
+		button.click();
+		Thread.sleep(4000);
+	}
 }
