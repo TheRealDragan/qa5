@@ -1,37 +1,19 @@
 package com.comtrade.domain;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
-public class Human implements Comparable<Human> {
+public class Human {
 	private Integer height;
 	private int heightInInches;
 	private String name;
 	private String lastName;
-
+	
 	private static final String country = "Srbija";
-
+	
 	public Human() {
 	}
-
-	public Human(Integer height, int heightInInches, String name, String lastName) {
-		super();
-		this.height = height;
-		this.heightInInches = heightInInches;
+	
+	public Human(String name, String lastName) {
 		this.name = name;
 		this.lastName = lastName;
-	}
-
-//	public Human(String name, String lastName) {
-//		this.name = name;
-//		this.lastName = lastName;
-//	}
-
-	public void setHeight(Integer height) {
-		this.height = height;
 	}
 
 	public Integer getHeight() {
@@ -69,11 +51,11 @@ public class Human implements Comparable<Human> {
 	public String getCountry() {
 		return country;
 	}
-
+	
 	public static void sayHi() {
 		System.out.println("Hi");
 	}
-
+	
 	public String getFirstAndLastName() {
 		return name + " " + lastName;
 	}
@@ -97,7 +79,6 @@ public class Human implements Comparable<Human> {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-
 		Human other = (Human) obj;
 		if (height == null) {
 			if (other.height != null)
@@ -118,19 +99,8 @@ public class Human implements Comparable<Human> {
 			return false;
 		return true;
 	}
-
-	@Override
-	public String toString() {
-		return "Visina = " + height + ", Visina  u incima = " + heightInInches + ", Ime " + name + ", Prezime "
-				+ lastName;
-	}
-
-	@Override
-	public int compareTo(Human h) {
-		int compareHeight = ((Human) h).getHeight();
-		return this.height - compareHeight;
-
-	}
-
+	
+	
+	
+	
 }
-
