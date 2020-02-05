@@ -14,6 +14,9 @@ public class ExceptionExample {
 		try {
 		sumOfNumbersLesserThanN(null);
 		} catch (Exception e) {
+			if (e instanceof RuntimeException) {
+				//do something
+			}
 			System.out.println("GRESKA!");
 		}
 	}
