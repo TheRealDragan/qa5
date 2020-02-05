@@ -5,13 +5,14 @@ import java.util.*;
 public class EntryPoint {
 
 	public static void main(String[] args) {
-		List<Integer> firstList = prepareFirstList();
-		// List<Integer> secondList = prepareSecondList();
-		System.out.println(firstList);
-		emptyListV1(firstList);
-		System.out.println(firstList);
-		emptyList(firstList);
-		System.out.println(firstList);
+	
+//		List<Integer> firstList = prepareFirstList();
+//		// List<Integer> secondList = prepareSecondList();
+//		System.out.println(firstList);
+//		emptyListV1(firstList);
+//		System.out.println(firstList);
+//		emptyList(firstList);
+//		System.out.println(firstList);
 
 	}
 
