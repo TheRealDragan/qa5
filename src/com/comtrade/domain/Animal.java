@@ -1,6 +1,10 @@
 package com.comtrade.domain;
 
-public class Animal {
+public class Animal {	
+
+	private String name;
+	private String subSpecies;
+	private int numberOfLegs;	
 	
 	public Animal() {
 		System.out.println("Pravimo zivotinju");
@@ -9,10 +13,6 @@ public class Animal {
 	public Animal(String name) {
 		System.out.println("Usao sam ovde");
 	}
-	
-	private String name;
-	private String subSpecies;
-	private int numberOfLegs;
 	
 	public String reactToHuman() {
 		return "Run";
