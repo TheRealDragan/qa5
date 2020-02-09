@@ -10,8 +10,8 @@ public class NemanjaJUnit {
 		return (sideLenght * sideLenght * sideLenght);
 	}
 
-	public double circumference(int r, double pi) {
-		return (2 * r * pi);
+	public double circumference(int r, double PI) {
+		return (2 * r * PI);
 	}
 
 	public String concatenate(String one, String two, String three, String four, String five) {

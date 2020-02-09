@@ -23,8 +23,8 @@ class JUnitTests {
 	@Test
 	void testCircumference() {
 		NemanjaJUnit nju = new NemanjaJUnit();
-		final double pi = 3.14;
-		double result = nju.circumference(7, pi);
+		final double PI = 3.14;
+		double result = nju.circumference(7, PI);
 		assertEquals(43.96, result);
 	}
 
