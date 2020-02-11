@@ -1,6 +1,6 @@
 package com.comtrade.domain;
 
-public class Human {
+public class Human  implements Comparable<Human> {
 	private Integer height;
 	private int heightInInches;
 	private String name;
@@ -9,6 +9,13 @@ public class Human {
 	private static final String country = "Srbija";
 	
 	public Human() {
+	}
+	
+	public Human(Integer height, String name, String lastName) {
+		super();
+		this.height = height;
+		this.name = name;
+		this.lastName = lastName;
 	}
 	
 	public Human(String name, String lastName) {
@@ -99,8 +106,20 @@ public class Human {
 			return false;
 		return true;
 	}
-	
-	
-	
-	
+
+	@Override
+	public int compareTo(Human h) {
+		int compareHeight = ((Human) h).getHeight();
+		return  compareHeight - this.height;
+
+		}
+	@Override
+	public String toString() {
+		return "Visina = " + height + ", Ime " + name + ", Prezime "
+				+ lastName;
+	}
 }
+	
+	
+	
+	
